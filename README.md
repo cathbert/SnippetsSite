@@ -1,1 +1,1 @@
-# Snippet Site![](C:\Users\user\Desktop\Capture.PNG)
+# Snippet Site!
