@@ -92,38 +92,21 @@
       </nav>
     </div>
   </header>
-    <pre style="color: white; text-align: left;"><code class="language-python">
+    <h4 style="color: white; text-align: right; text-style: underline; font-family: monospace">>>>> {{ snippet.title }}</h4>
+    <pre style="color: white; text-align: left; font-family: monospace"><code class="language-python">
     {{ snippet.code }}
     </code></pre>
-
-    <div class="pagination">
-    <span class="step-links">
-        {% if page_obj.has_previous %}
-            <a href="?page=1">&laquo; first</a>
-            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
-        {% endif %}
-
-        <span class="current">
-            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
-        </span>
-
-        {% if page_obj.has_next %}
-            <a href="?page={{ page_obj.next_page_number }}">next</a>
-            <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
-        {% endif %}
-    </span>
-</div>
 
   </tbody>
 
 </table>
   <footer class="mt-auto text-white-50">
-    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@GoofyCoda</a>.</p>
   </footer>
 </div>
 
 
     <script src="{% static 'js/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>
