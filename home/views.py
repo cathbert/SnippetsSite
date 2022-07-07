@@ -26,7 +26,6 @@ def snippets_view(request):
 
 
 class SearchResultsView(ListView):
-    paginate_by = 7
     model = Snippet
     template_name = "snippets_list.html"
 
