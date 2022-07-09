@@ -41,3 +41,7 @@ def snippet_view(request, snip):
     context = {'snippet': snippet}
 
     return render(request, "snippet_code.html", context)
+
+
+def edit_snippet(request, snipedit):
+    print("Edit Snip")

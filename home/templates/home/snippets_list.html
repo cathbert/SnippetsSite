@@ -73,19 +73,7 @@
   <body class="d-flex h-100 text-center text-white bg-dark">
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-        <a class="navbar-brand" href="{% url 'home:home_view' %}">
-            <img src="{% static 'img/logo.png' %}" alt="" width="40" height="40">
-          </a>
-      <h3 class="float-md-start mb-0">GC-Snippets</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Add New Snippet</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-      </nav>
-    </div>
-  </header>
+  {% include 'head.html' %}
 
 
   <table class="table" style="color: white; text-align: left;">
